@@ -3,11 +3,13 @@ function distanceFromHqInBlocks(location) {
    return Math.abs(location - headquarters);
 }
 
+
 function distanceFromHqInFeet(location) {
    const feetPerBlock = 264; 
    const blocks = Math.abs(location - 42);
    return blocks * feetPerBlock;
  }
+
  
 
  function distanceTravelledInFeet(start, destination) {
@@ -15,6 +17,7 @@ function distanceFromHqInFeet(location) {
    const blocks = Math.abs(destination - start);
    return blocks * feetPerBlock;
  }
+ 
 
  function calculatesFarePrice(start, destination) {
    const feetPerBlock = 264;
